@@ -9,7 +9,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors({ origin: ["https://hanaref-fd006.web.app", "https://hanaref-fd006.firebaseapp.com"] }));
+app.use(cors({ origin: ["https://hanaref-fd006.web.app", "https://hanaref-fd006.firebaseapp.com", "http://localhost:3000"] }));
 
 routes(app);
 
